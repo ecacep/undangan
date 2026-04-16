@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Digital Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="page-glow glow-left"></div>
+  <div class="page-glow glow-right"></div>
+
+  <div class="music-control" id="musicControl" title="Musik">
+    <button id="musicToggle" aria-label="Toggle music">♫</button>
+  </div>
+
+  <div class="scroll-control">
+    <button id="autoScrollToggle" class="premium-btn ghost small">Auto Scroll: Off</button>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="kasih.mp3" type="audio/mpeg">
+  </audio>
+
+  <section class="opening-screen" id="openingScreen">
+    <div class="opening-card glass-card">
+      <p class="eyebrow">The Wedding Invitation</p>
+      <h1>Juna &amp; Bella</h1>
+      <p class="opening-text">Sebuah undangan digital eksklusif dengan nuansa premium, modern, dan elegan.</p>
+      <div class="opening-actions">
+        <button class="premium-btn" id="openInvitation">Buka Undangan</button>
+      </div>
+      <p class="guest-name">Kepada Yth. <span id="guestName">Tamu Undangan</span></p>
+    </div>
+  </section>
+
+  <main class="main-content hidden" id="mainContent">
+    <header class="hero section">
+      <div class="hero-overlay"></div>
+      <nav class="topbar">
+        <div class="brand">YACESA</div>
+        <div class="topbar-links">
+          <a href="#mempelai">Mempelai</a>
+          <a href="#acara">Acara</a>
+          <a href="#galeri">Galeri</a>
+          <a href="#rsvp">RSVP</a>
+        </div>
+      </nav>
+
+      <div class="hero-content glass-card">
+        <p class="eyebrow">THE WEDDING OF</p>
+        <h1 class="hero-title">J<span>&amp;</span>B</h1>
+        <h2 class="hero-subtitle">Juna &amp; Bella</h2>
+        <p class="hero-date">16 | 03 | 2027</p>
+        <p class="hero-desc">
+          Dengan penuh sukacita, kami mengundang Anda untuk hadir dalam momen sakral dan istimewa pernikahan kami.
+        </p>
+        <div class="hero-actions">
+          <a href="#acara" class="premium-btn">Lihat Detail Acara</a>
+          <a href="#rsvp" class="premium-btn ghost">Konfirmasi Kehadiran</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="countdown section">
+      <div class="section-heading">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <h2>Menuju Hari Bahagia</h2>
+      </div>
+      <div class="countdown-grid glass-card">
+        <div class="countdown-item"><span id="days">00</span><small>Hari</small></div>
+        <div class="countdown-item"><span id="hours">00</span><small>Jam</small></div>
+        <div class="countdown-item"><span id="minutes">00</span><small>Menit</small></div>
+        <div class="countdown-item"><span id="seconds">00</span><small>Detik</small></div>
+      </div>
+    </section>
+
+    <section class="couple section" id="mempelai">
+      <div class="section-heading">
+        <p class="eyebrow">BRIDE &amp; GROOM</p>
+        <h2>Mempelai</h2>
+      </div>
+      <div class="couple-grid">
+        <article class="couple-card glass-card reveal">
+          <div class="portrait-frame">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=80" alt="Mempelai pria" />
+          </div>
+          <h3>Juna Pratama</h3>
+          <p>Putra pertama dari Bapak Lorem &amp; Ibu Ipsum</p>
+          <span class="signature">The Groom</span>
+        </article>
+        <article class="couple-card glass-card reveal">
+          <div class="portrait-frame">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Mempelai wanita" />
+          </div>
+          <h3>Bella Maharani</h3>
+          <p>Putri pertama dari Bapak Dolor &amp; Ibu Sit Amet</p>
+          <span class="signature">The Bride</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="story section">
+      <div class="section-heading">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>Perjalanan Cinta</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item glass-card reveal">
+          <span class="timeline-year">2021</span>
+          <h3>Pertama Bertemu</h3>
+          <p>Kami bertemu dalam sebuah momen sederhana yang ternyata menjadi awal dari kisah luar biasa.</p>
+        </div>
+        <div class="timeline-item glass-card reveal">
+          <span class="timeline-year">2023</span>
+          <h3>Lamaran</h3>
+          <p>Dengan penuh keyakinan, kami melangkah ke tahap yang lebih serius bersama keluarga tercinta.</p>
+        </div>
+        <div class="timeline-item glass-card reveal">
+          <span class="timeline-year">2027</span>
+          <h3>Hari Bahagia</h3>
+          <p>Kini kami mengundang Anda menjadi bagian dari perayaan cinta dan awal perjalanan baru kami.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="event section" id="acara">
+      <div class="section-heading">
+        <p class="eyebrow">WEDDING EVENT</p>
+        <h2>Rangkaian Acara</h2>
+      </div>
+      <div class="event-grid">
+        <article class="event-card glass-card reveal">
+          <div class="event-icon">✦</div>
+          <h3>Akad Nikah</h3>
+          <p>Sabtu, 16 Maret 2027</p>
+          <p>08.00 WIB</p>
+          <p>Grand Sapphire Hall, Jakarta</p>
+        </article>
+        <article class="event-card glass-card reveal">
+          <div class="event-icon">✦</div>
+          <h3>Resepsi</h3>
+          <p>Sabtu, 16 Maret 2027</p>
+          <p>11.00 - 15.00 WIB</p>
+          <p>Grand Sapphire Hall, Jakarta</p>
+        </article>
+        <article class="event-card glass-card reveal">
+          <div class="event-icon">✦</div>
+          <h3>Live Streaming</h3>
+          <p>Bagi tamu yang berhalangan hadir, acara dapat disaksikan secara online.</p>
+          <a href="#" class="text-link">Tautan streaming</a>
+        </article>
+      </div>
+      <div class="event-actions">
+        <a href="#" class="premium-btn">Buka Google Maps</a>
+        <a href="#" class="premium-btn ghost">Simpan ke Kalender</a>
+      </div>
+    </section>
+
+    <section class="features section">
+      <div class="section-heading">
+        <p class="eyebrow">PREMIUM FEATURES</p>
+        <h2>Fitur Eksklusif</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card glass-card reveal"><h3>Auto Scroll</h3><p>Pengalaman membaca undangan yang mewah dan sinematik.</p></div>
+        <div class="feature-card glass-card reveal"><h3>Animasi Premium</h3><p>Transisi halus, glow elegan, dan elemen interaktif modern.</p></div>
+        <div class="feature-card glass-card reveal"><h3>Galeri Eksklusif</h3><p>Tampilan foto estetik dengan modal preview yang bersih.</p></div>
+        <div class="feature-card glass-card reveal"><h3>Musik Latar</h3><p>Tombol kontrol musik untuk pengalaman undangan lebih hidup.</p></div>
+        <div class="feature-card glass-card reveal"><h3>RSVP Instan</h3><p>Form konfirmasi modern dengan feedback langsung di layar.</p></div>
+        <div class="feature-card glass-card reveal"><h3>Desain Responsive</h3><p>Tampil premium di desktop maupun mobile.</p></div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="galeri">
+      <div class="section-heading">
+        <p class="eyebrow">MOMENTS</p>
+        <h2>Galeri</h2>
+      </div>
+      <div class="gallery-grid">
+        <img class="gallery-item reveal" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80" alt="Galeri 1">
+        <img class="gallery-item reveal" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80" alt="Galeri 2">
+        <img class="gallery-item reveal" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Galeri 3">
+        <img class="gallery-item reveal" src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=900&q=80" alt="Galeri 4">
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="section-heading">
+        <p class="eyebrow">RSVP</p>
+        <h2>Konfirmasi Kehadiran</h2>
+      </div>
+      <div class="rsvp-wrap glass-card reveal">
+        <form id="rsvpForm">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" placeholder="Nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="attendance">Kehadiran</label>
+            <select id="attendance" required>
+              <option value="">Pilih status</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Masih Diusahakan">Masih Diusahakan</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="message">Ucapan &amp; Doa</label>
+            <textarea id="message" rows="4" placeholder="Tulis doa terbaik Anda..."></textarea>
+          </div>
+          <button type="submit" class="premium-btn">Kirim RSVP</button>
+        </form>
+        <div id="rsvpResult" class="rsvp-result"></div>
+      </div>
+    </section>
+
+    <section class="gift section">
+      <div class="section-heading">
+        <p class="eyebrow">WEDDING GIFT</p>
+        <h2>Hadiah Digital</h2>
+      </div>
+      <div class="gift-card glass-card reveal">
+        <p>Bagi keluarga dan sahabat yang ingin mengirimkan tanda kasih, dapat melalui informasi berikut:</p>
+        <div class="bank-box">
+          <strong>Bank BCA</strong>
+          <span>1234567890 a.n. Bella Maharani</span>
+        </div>
+        <button class="premium-btn ghost" id="copyRek">Salin Nomor Rekening</button>
+        <p id="copyInfo" class="copy-info"></p>
+      </div>
+    </section>
+
+    <footer class="footer section">
+      <p>Terima kasih atas doa dan restu yang diberikan.</p>
+      <h2>Juna &amp; Bella</h2>
+      <span>Made with elegance for your premium invitation concept.</span>
+    </footer>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="closeLightbox">×</button>
+    <img id="lightboxImage" src="" alt="Preview Galeri">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
